@@ -27,7 +27,7 @@ stuff.then((response) => {
     list.appendChild(regionP)
     let capitalp = document.createElement('p')
     capitalp.innerHTML = `${info[i].capital[0]}`
-    country.appendChild(capitalp)
+    list.appendChild(capitalp)
   }
   
   // console.log(info);
