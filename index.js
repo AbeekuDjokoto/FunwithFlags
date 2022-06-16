@@ -18,13 +18,13 @@ stuff.then((response) => {
   for(let i in info){
     let countryp = document.createElement('p')
     countryp.innerHTML = `${info[i].altSpellings[1]}`
-    country.appendChild(countryp)
+    list.appendChild(countryp)
     let img = document.createElement('img')
     img.setAttribute('src', `${info[i].flags.png}`)
-    country.appendChild(img)
+    list.appendChild(img)
     let regionP = document.createElement('p')
     regionP.innerHTML = ` ${info[i].region}`
-    country.appendChild(regionP)
+    list.appendChild(regionP)
     let capitalp = document.createElement('p')
     capitalp.innerHTML = `${info[i].capital[0]}`
     country.appendChild(capitalp)
